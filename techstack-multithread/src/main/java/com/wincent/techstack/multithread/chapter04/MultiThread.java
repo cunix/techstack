@@ -1,4 +1,4 @@
-package com.wincent.techstack.multithread.chapter04;
+package chapter04;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

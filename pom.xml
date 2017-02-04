@@ -7,5 +7,6 @@
   <modules>
   	<module>techstack-rpc</module>
   	<module>techstack-test</module>
+  	<module>techstack-multithread</module>
   </modules>
 </project>

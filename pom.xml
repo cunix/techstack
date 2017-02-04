@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>techstack-rpc</module>
+  	<module>techstack-test</module>
   </modules>
 </project>

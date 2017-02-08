@@ -2,12 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.wincent.techstack</groupId>
-    <artifactId>techstack</artifactId>
+    <artifactId>techstack-mq</artifactId>
     <version>1.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>techstack-mq</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>techstack-mq-activemq</module>
-  </modules>
+  <artifactId>techstack-mq-activemq</artifactId>
+  <packaging>war</packaging>
 </project>

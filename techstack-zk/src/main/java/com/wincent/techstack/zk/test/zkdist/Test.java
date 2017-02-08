@@ -10,7 +10,6 @@ public class Test {
 			public void run() {
 				System.out.println("线程开始了");
 				while(true){
-					
 				}
 			}
 		});

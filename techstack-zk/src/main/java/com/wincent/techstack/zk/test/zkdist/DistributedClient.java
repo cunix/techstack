@@ -23,7 +23,6 @@ public class DistributedClient {
 	 * @throws Exception
 	 */
 	public void getConnect() throws Exception {
-
 		zk = new ZooKeeper(connectString, sessionTimeout, new Watcher() {
 			public void process(WatchedEvent event) {
 				// 收到事件通知后的回调函数（应该是我们自己的事件处理逻辑）
@@ -35,7 +34,6 @@ public class DistributedClient {
 				}
 			}
 		});
-
 	}
 
 	/**
@@ -57,10 +55,8 @@ public class DistributedClient {
 		}
 		// 把servers赋值给成员变量serverList，已提供给各业务线程使用
 		serverList = servers;
-		
 		//打印服务器列表
 		System.out.println(serverList);
-		
 	}
 
 	/**
@@ -74,19 +70,14 @@ public class DistributedClient {
 	}
 	
 	
-	
-	
 	public static void main(String[] args) throws Exception {
-
 		// 获取zk连接
 		DistributedClient client = new DistributedClient();
 		client.getConnect();
 		// 获取servers的子节点信息（并监听），从中获取服务器信息列表
 		client.getServerList();
-
 		// 业务线程启动
 		client.handleBussiness();
-		
 	}
 
 }

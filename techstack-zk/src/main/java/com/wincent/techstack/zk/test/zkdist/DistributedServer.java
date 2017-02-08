@@ -19,7 +19,6 @@ public class DistributedServer {
 	 * @throws Exception
 	 */
 	public void getConnect() throws Exception {
-
 		zk = new ZooKeeper(connectString, sessionTimeout, new Watcher() {
 			public void process(WatchedEvent event) {
 				// 收到事件通知后的回调函数（应该是我们自己的事件处理逻辑）
@@ -57,17 +56,13 @@ public class DistributedServer {
 	}
 
 	public static void main(String[] args) throws Exception {
-
 		// 获取zk连接
 		DistributedServer server = new DistributedServer();
 		server.getConnect();
-
 		// 利用zk连接注册服务器信息
 		server.registerServer(args[0]);
-
 		// 启动业务功能
 		server.handleBussiness(args[0]);
-
 	}
 
 }

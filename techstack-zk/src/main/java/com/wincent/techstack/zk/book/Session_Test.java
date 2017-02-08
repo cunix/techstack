@@ -1,4 +1,4 @@
-package com.wincent.techstack.zk;
+package com.wincent.techstack.zk.book;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;

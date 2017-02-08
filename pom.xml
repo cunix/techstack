@@ -9,5 +9,16 @@
   	<module>techstack-test</module>
   	<module>techstack-multithread</module>
   	<module>techstack-zk</module>
+  	<module>techstack-mq</module>
   </modules>
+  
+  <dependencies>
+   <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	</dependency>
+  </dependencies>
+  
+  
 </project>

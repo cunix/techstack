@@ -62,7 +62,7 @@ public class DemoAuth2 implements Watcher {
         try {
             System.out.println(prefix + "获取数据：" + PATH);
             zkClient = new ZkClient(SERVER_LIST, 50000);
-            zkClient.addAuthInfo(authentication_type, "error".getBytes());
+//            zkClient.addAuthInfo(authentication_type, "error".getBytes());
             System.out.println(prefix + "成功获取数据：" + zkClient.readData(PATH));
         } catch (Exception e) {
             System.err.println(prefix + "获取数据失败，原因：" + e.getMessage());
@@ -87,14 +87,13 @@ public class DemoAuth2 implements Watcher {
         try {
             System.out.println(prefix + "获取数据：" + PATH);
             zkClient = new ZkClient(SERVER_LIST, 50000);
-            zkClient.addAuthInfo(authentication_type, correctAuthentication.getBytes());
+//            zkClient.addAuthInfo(authentication_type, correctAuthentication.getBytes());
             System.out.println(prefix + "成功获取数据：" + zkClient.readData(PATH));
         } catch (Exception e) {
             System.out.println(prefix + "获取数据失败，原因：" + e.getMessage());
         }
     }
 
-    @Override
     public void process(WatchedEvent event) {
         // TODO Auto-generated method stub
 

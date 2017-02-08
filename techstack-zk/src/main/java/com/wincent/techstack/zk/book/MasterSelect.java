@@ -1,4 +1,4 @@
-package com.wincent.techstack.zk;
+package com.wincent.techstack.zk.book;
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 

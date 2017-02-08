@@ -3,13 +3,10 @@ package com.wincent.techstack.multithread.chapter01;
 
 public class ConcurrencyTest {
 
-    /** ִ�д��� */
     private static final long count = 10000l;
 
     public static void main(String[] args) throws InterruptedException {
-        //��������
         concurrency();
-        //���̼߳���
         serial();
     }
 

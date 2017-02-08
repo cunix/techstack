@@ -8,5 +8,6 @@
   	<module>techstack-rpc</module>
   	<module>techstack-test</module>
   	<module>techstack-multithread</module>
+  	<module>techstack-zk</module>
   </modules>
 </project>

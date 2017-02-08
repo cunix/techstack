@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_2;
+package com.wincent.techstack.zk.book.chapter05.$5_4_2;
 import org.apache.curator.test.TestingCluster;
 import org.apache.curator.test.TestingZooKeeperServer;
 

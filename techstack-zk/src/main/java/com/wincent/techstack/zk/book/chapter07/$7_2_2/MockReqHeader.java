@@ -1,4 +1,4 @@
-package book.chapter07.$7_2_2;
+package com.wincent.techstack.zk.book.chapter07.$7_2_2;
 
 import org.apache.jute.InputArchive;
 import org.apache.jute.OutputArchive;

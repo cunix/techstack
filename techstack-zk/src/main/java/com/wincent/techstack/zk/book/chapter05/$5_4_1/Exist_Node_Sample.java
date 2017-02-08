@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_1;
+package com.wincent.techstack.zk.book.chapter05.$5_4_1;
 
 import org.I0Itec.zkclient.ZkClient;
 

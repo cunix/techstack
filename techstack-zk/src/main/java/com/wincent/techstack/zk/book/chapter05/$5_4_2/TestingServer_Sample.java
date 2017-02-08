@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_2;
+package com.wincent.techstack.zk.book.chapter05.$5_4_2;
 import java.io.File;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;

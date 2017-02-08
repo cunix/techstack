@@ -1,4 +1,4 @@
-package book.chapter08.$8_5_2;
+package com.wincent.techstack.zk.book.chapter08.$8_5_2;
 
 /**
  * 三机房部署方案

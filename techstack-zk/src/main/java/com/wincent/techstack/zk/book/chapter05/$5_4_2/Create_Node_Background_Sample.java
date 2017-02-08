@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_2;
+package com.wincent.techstack.zk.book.chapter05.$5_4_2;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -28,7 +28,6 @@ public class Create_Node_Background_Sample {
         System.out.println("Main thread: " + Thread.currentThread().getName());
         // 此处传入了自定义的Executor
         client.create().creatingParentsIfNeeded().withMode(CreateMode.EPHEMERAL).inBackground(new BackgroundCallback() {
-            @Override
             public void processResult(CuratorFramework client, CuratorEvent event) throws Exception {
                 System.out.println("event[code: " + event.getResultCode() + ", type: " + event.getType() + "]");
                 System.out.println("Thread of processResult: " + Thread.currentThread().getName());
@@ -37,7 +36,6 @@ public class Create_Node_Background_Sample {
         }, tp).forPath(path, "init".getBytes());
         // 此处没有传入自定义的Executor
         client.create().creatingParentsIfNeeded().withMode(CreateMode.EPHEMERAL).inBackground(new BackgroundCallback() {
-            @Override
             public void processResult(CuratorFramework client, CuratorEvent event) throws Exception {
                 System.out.println("event[code: " + event.getResultCode() + ", type: " + event.getType() + "]");
                 System.out.println("Thread of processResult: " + Thread.currentThread().getName());

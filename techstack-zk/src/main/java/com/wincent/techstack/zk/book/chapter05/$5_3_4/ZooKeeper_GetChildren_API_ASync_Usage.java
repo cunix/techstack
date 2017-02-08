@@ -1,4 +1,4 @@
-package book.chapter05.$5_3_4;
+package com.wincent.techstack.zk.book.chapter05.$5_3_4;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import org.apache.zookeeper.AsyncCallback;

@@ -1,4 +1,4 @@
-package book.chapter05;
+package com.wincent.techstack.zk.book.chapter05;
 
 import java.util.ArrayList;
 import java.util.List;

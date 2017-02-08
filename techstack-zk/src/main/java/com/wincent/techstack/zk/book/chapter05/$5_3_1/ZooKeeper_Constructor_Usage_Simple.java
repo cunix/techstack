@@ -1,4 +1,4 @@
-package book.chapter05.$5_3_1;
+package com.wincent.techstack.zk.book.chapter05.$5_3_1;
 
 import java.util.concurrent.CountDownLatch;
 

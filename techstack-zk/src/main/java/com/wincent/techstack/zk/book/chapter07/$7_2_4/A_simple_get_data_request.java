@@ -1,4 +1,4 @@
-package book.chapter07.$7_2_4;
+package com.wincent.techstack.zk.book.chapter07.$7_2_4;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;

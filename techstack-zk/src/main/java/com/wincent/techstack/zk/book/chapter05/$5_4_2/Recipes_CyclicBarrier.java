@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_2;
+package com.wincent.techstack.zk.book.chapter05.$5_4_2;
 import java.io.IOException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;

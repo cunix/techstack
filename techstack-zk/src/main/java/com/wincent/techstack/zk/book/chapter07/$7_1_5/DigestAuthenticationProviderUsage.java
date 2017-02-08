@@ -1,4 +1,4 @@
-package book.chapter07.$7_1_5;
+package com.wincent.techstack.zk.book.chapter07.$7_1_5;
 import java.security.NoSuchAlgorithmException;
 import org.apache.zookeeper.server.auth.DigestAuthenticationProvider;
 

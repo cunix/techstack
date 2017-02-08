@@ -1,4 +1,4 @@
-package book.chapter05.$5_3_5;
+package com.wincent.techstack.zk.book.chapter05.$5_3_5;
 import java.util.concurrent.CountDownLatch;
 import org.apache.zookeeper.AsyncCallback;
 import org.apache.zookeeper.CreateMode;
@@ -29,7 +29,7 @@ public class SetData_API_ASync_Usage implements Watcher {
     	
     	Thread.sleep( Integer.MAX_VALUE );
     }
-    @Override
+    
     public void process(WatchedEvent event) {
         if (KeeperState.SyncConnected == event.getState()) {
             if (EventType.None == event.getType() && null == event.getPath()) {

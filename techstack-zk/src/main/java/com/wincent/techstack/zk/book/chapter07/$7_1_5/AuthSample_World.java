@@ -1,4 +1,4 @@
-package book.chapter07.$7_1_5;
+package com.wincent.techstack.zk.book.chapter07.$7_1_5;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;

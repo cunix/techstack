@@ -1,4 +1,4 @@
-package book.chapter05.$5_3_2;
+package com.wincent.techstack.zk.book.chapter05.$5_3_2;
 import java.util.concurrent.CountDownLatch;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;

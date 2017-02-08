@@ -1,4 +1,4 @@
-package book.chapter05.$5_4_2;
+package com.wincent.techstack.zk.book.chapter05.$5_4_2;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.NodeCache;
@@ -24,7 +24,6 @@ public class NodeCache_Sample {
 	    final NodeCache cache = new NodeCache(client,path,false);
 		cache.start(true);
 		cache.getListenable().addListener(new NodeCacheListener() {
-			@Override
 			public void nodeChanged() throws Exception {
 				System.out.println("Node data update, new data: " + 
 			    new String(cache.getCurrentData().getData()));

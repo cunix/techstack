@@ -1,4 +1,4 @@
-package book.chapter07.$7_4;
+package com.wincent.techstack.zk.book.chapter07.$7_4;
 
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
@@ -35,7 +35,6 @@ public class Sample_CONNECTIONLOSS_SESSIONEXPIRED implements Watcher {
         }
     }
 
-    @Override
     public void process(WatchedEvent event) {
 
         if (event.getType() == EventType.None && event.getState() == KeeperState.SyncConnected) {

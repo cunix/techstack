@@ -1,4 +1,4 @@
-package book.chapter05.$5_3_3;
+package com.wincent.techstack.zk.book.chapter05.$5_3_3;
 import java.util.concurrent.CountDownLatch;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
@@ -27,7 +27,7 @@ public class Delete_API_Sync_Usage implements Watcher {
     	
     	Thread.sleep( Integer.MAX_VALUE );
     }
-    @Override
+    
     public void process(WatchedEvent event) {
         if (KeeperState.SyncConnected == event.getState()) {
             if (EventType.None == event.getType() && null == event.getPath()) {

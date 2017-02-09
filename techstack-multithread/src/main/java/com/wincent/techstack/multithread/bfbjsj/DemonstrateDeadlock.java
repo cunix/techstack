@@ -2,8 +2,8 @@ package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.*;
 
-import net.jcip.examples.DynamicOrderDeadlock.Account;
-import net.jcip.examples.DynamicOrderDeadlock.DollarAmount;
+import com.wincent.techstack.multithread.bfbjsj.DynamicOrderDeadlock.Account;
+import com.wincent.techstack.multithread.bfbjsj.DynamicOrderDeadlock.DollarAmount;
 
 /**
  * DemonstrateDeadlock

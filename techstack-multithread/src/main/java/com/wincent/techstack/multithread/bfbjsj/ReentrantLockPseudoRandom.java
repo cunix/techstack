@@ -1,8 +1,7 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.concurrent.locks.*;
 
-import net.jcip.annotations.*;
 
 /**
  * ReentrantLockPseudoRandom

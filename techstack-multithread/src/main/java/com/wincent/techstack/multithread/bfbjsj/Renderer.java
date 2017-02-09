@@ -1,8 +1,8 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.*;
 import java.util.concurrent.*;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static com.wincent.techstack.multithread.bfbjsj.LaunderThrowable.launderThrowable;
 
 /**
  * Renderer

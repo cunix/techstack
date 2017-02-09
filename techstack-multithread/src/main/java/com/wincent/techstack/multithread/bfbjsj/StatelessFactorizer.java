@@ -3,7 +3,6 @@ package com.wincent.techstack.multithread.bfbjsj;
 import java.math.BigInteger;
 import javax.servlet.*;
 
-import net.jcip.annotations.*;
 
 /**
  * StatelessFactorizer

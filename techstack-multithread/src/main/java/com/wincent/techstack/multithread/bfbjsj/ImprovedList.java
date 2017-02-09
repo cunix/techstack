@@ -1,8 +1,7 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.*;
 
-import net.jcip.annotations.*;
 
 /**
  * ImprovedList

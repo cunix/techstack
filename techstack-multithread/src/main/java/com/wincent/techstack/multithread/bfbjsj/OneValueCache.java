@@ -1,9 +1,8 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.math.BigInteger;
 import java.util.*;
 
-import net.jcip.annotations.*;
 
 /**
  * OneValueCache

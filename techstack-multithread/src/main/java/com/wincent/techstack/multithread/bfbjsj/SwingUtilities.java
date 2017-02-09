@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.*;

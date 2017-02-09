@@ -1,6 +1,5 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
-import net.jcip.annotations.*;
 
 /**
  * MutablePoint

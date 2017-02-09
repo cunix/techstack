@@ -1,4 +1,4 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.io.IOException;
 import java.io.InputStream;

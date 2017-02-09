@@ -1,7 +1,7 @@
 package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.concurrent.*;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static com.wincent.techstack.multithread.bfbjsj.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun

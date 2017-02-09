@@ -1,9 +1,8 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.*;
 import java.util.concurrent.*;
 
-import net.jcip.annotations.*;
 
 /**
  * PublishingVehicleTracker

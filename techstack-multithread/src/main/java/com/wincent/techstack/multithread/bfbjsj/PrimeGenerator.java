@@ -1,11 +1,10 @@
-package net.jcip.examples;
+package com.wincent.techstack.multithread.bfbjsj;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 import java.math.BigInteger;
 import java.util.*;
 import java.util.concurrent.*;
 
-import net.jcip.annotations.*;
 
 /**
  * PrimeGenerator

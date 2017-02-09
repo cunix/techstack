@@ -2,6 +2,7 @@ package com.wincent.techstack.multithread.bfbjsj;
 
 import java.util.concurrent.*;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
+import static com.wincent.techstack.multithread.bfbjsj.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun2

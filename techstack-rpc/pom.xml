@@ -9,5 +9,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>techstack-rpc-netty</module>
+  	<module>techstack-rpc-demo</module>
   </modules>
 </project>

@@ -36,18 +36,14 @@ public class TestServerTask implements Runnable{
 			System.out.println("calling method: " + method);
 			Object invoke = method.invoke(newInstance, methodParam);
 			System.out.println("results: " + (int)invoke);
-			
-			
 			PrintWriter pw = new PrintWriter(new BufferedOutputStream(out));
 			pw.println((int)invoke);
-			pw.flush();
 			
+			pw.flush();
 			br.close();
 			pw.close();
 			socket.close();
-			
 		} catch (Exception e) {
-			 
 			e.printStackTrace();
 		}
 		

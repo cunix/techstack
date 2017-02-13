@@ -10,6 +10,7 @@
   	<module>techstack-multithread</module>
   	<module>techstack-zk</module>
   	<module>techstack-mq</module>
+  	<module>techstack-hadoop</module>
   </modules>
   
   <dependencies>

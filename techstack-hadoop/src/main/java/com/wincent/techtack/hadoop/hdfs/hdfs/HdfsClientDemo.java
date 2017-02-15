@@ -1,4 +1,4 @@
-package com.wincent.techtack.hadoop.hdfs;
+package com.wincent.techtack.hadoop.hdfs.hdfs;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -27,16 +27,17 @@ import org.junit.Test;
 public class HdfsClientDemo {
 	FileSystem fs = null;
 	Configuration conf = null;
-	
 	@Before
 	public void init() throws Exception{
+		
 		conf = new Configuration();
 //		conf.set("fs.defaultFS", "hdfs://mini1:9000");
 		conf.set("dfs.replication", "5");
+		
 		//拿到一个文件系统操作的客户端实例对象
 		fs = FileSystem.get(conf);
 		//可以直接传入 uri和用户身份
-		fs = FileSystem.get(new URI("hdfs://192.168.64.101:9000"),conf,"hadoop");
+		fs = FileSystem.get(new URI("hdfs://mini1:9000"),conf,"hadoop");
 	}
 
 	/**
@@ -45,7 +46,8 @@ public class HdfsClientDemo {
 	 */
 	@Test
 	public void testUpload() throws Exception {
-		fs.copyFromLocalFile(new Path("D:\\Temp\\jdk7.tar.gz"), new Path("/temp"));
+		
+		fs.copyFromLocalFile(new Path("c:/access.log"), new Path("/access.log.copy"));
 		fs.close();
 	}
 	
@@ -56,6 +58,7 @@ public class HdfsClientDemo {
 	 */
 	@Test
 	public void testDownload() throws Exception {
+		
 		fs.copyToLocalFile(new Path("/access.log.copy"), new Path("d:/"));
 	}
 	
@@ -65,11 +68,14 @@ public class HdfsClientDemo {
 	 */
 	@Test
 	public void testConf(){
+		
 		Iterator<Entry<String, String>> it = conf.iterator();
 		while(it.hasNext()){
 			Entry<String, String> ent = it.next();
 			System.out.println(ent.getKey() + " : " + ent.getValue());
+			
 		}
+		
 	}
 	
 	
@@ -77,13 +83,16 @@ public class HdfsClientDemo {
 	public void testMkdir() throws Exception {
 		boolean mkdirs = fs.mkdirs(new Path("/testmkdir/aaa/bbb"));
 		System.out.println(mkdirs);
+		
 	}
 	
 	
 	@Test
 	public void testDelete() throws Exception {
+		
 		boolean flag = fs.delete(new Path("/testmkdir/aaa"), true);
 		System.out.println(flag);
+		
 	}
 	
 	
@@ -93,7 +102,9 @@ public class HdfsClientDemo {
 	 */
 	@Test
 	public void testLs() throws Exception {
+		
 		RemoteIterator<LocatedFileStatus> listFiles = fs.listFiles(new Path("/"), true);
+		
 		while(listFiles.hasNext()){
 			LocatedFileStatus fileStatus = listFiles.next();
 			System.out.println("blocksize: " +fileStatus.getBlockSize());
@@ -112,19 +123,29 @@ public class HdfsClientDemo {
 				System.out.println("datanode:" + dn);
 				}
 			}
+			
+			
+			
 		}
+		
 	}
 	
 	
 	
 	@Test
 	public void testLs2() throws Exception {
+		
 		FileStatus[] listStatus = fs.listStatus(new Path("/"));
 		for(FileStatus file :listStatus){
+			
 			System.out.println("name: " + file.getPath().getName());
 			System.out.println((file.isFile()?"file":"directory"));
+			
 		}
+		
 	}
+	
+	
 	
 	
 	public static void main(String[] args) throws Exception {
@@ -132,8 +153,13 @@ public class HdfsClientDemo {
 		conf.set("fs.defaultFS", "hdfs://mini1:9000");
 		//拿到一个文件系统操作的客户端实例对象
 		FileSystem fs = FileSystem.get(conf);
+		
 		fs.copyFromLocalFile(new Path("c:/access.log"), new Path("/access.log.copy"));
 		fs.close();
 	}
+	
+
+	
+	
 	
 }
